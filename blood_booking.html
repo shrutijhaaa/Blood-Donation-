@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Booking</title>
+    <link rel="stylesheet" href="blood_booking.css?v=1.0">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="avilable_blood.html"><i class="fas fa-envelope"></i> Doner</a></li>
+                <li><a href="contact.html"><i class="fas fa-user"></i>Contact</a></li>
+                <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video autoplay muted loop id="bg-video">
+                <source src="images/blood-vedio.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        </div>
+    <div class="container">
+        <h1>Blood Booking</h1>
+        <form action="book_blood.php" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone_number" name="Phone_Number" required>
+
+            <label for="blood-group">Blood Group</label>
+            <select id="blood_group" name="Blood_Group" required>
+                <option value="">Select your blood group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="state">State</label>
+            <select id="state" name="State" required>
+                <option value="">Select State</option>
+                    <option value="state1">Andhra Pradesh</option>
+                    <option value="state2">Arunachal Pradesh</option>
+                    <option value="state1">Bihar</option>
+                    <option value="state2">Chhattisgarh</option>
+                    <option value="state1">Goa</option>
+                    <option value="state2">Gujarat</option>
+                    <option value="state1">Haryana</option>
+                    <option value="state2">Himachal Pradesh</option>
+                    <option value="state1">Madhya Pradesh</option>
+                    <option value="state2">Maharashtra</option>
+                    <option value="state1">Rajasthan</option>
+                    <option value="state2">Uttar Pradesh</option>
+                    <option value="state1">Delhi</option>
+                    <option value="state2">Tamil Nadu</option>
+            </select>
+
+            <label for="date">Preferred Donation Date</label>
+            <input type="date" id="date" name="Date" required>
+            <label for="time">Preferred Donation Time</label>
+            <input type="time" id="time" name="Time" required>
+            <button type="submit">Book blood</button>
+        </form>
+    </div>
+  
+<div class="footer">
+    &copy; 2024 Blood Donation Website | All rights reserved.
+</div>
+</body>
+</html>

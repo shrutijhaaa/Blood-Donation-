@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="avilable_blood.php"><i class="fas fa-envelope"></i> Doner</a></li>
+                <li><a href="contact.html"><i class="fas fa-user"></i>Contact</a></li>
+                <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video autoplay muted loop id="bg-video">
+                <source src="images/blood-vedio.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        </div>
+    <div class="container">
+        <div class="signin-container">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <p>No account yet? <a href="signup.html">Signup</a></p>
+        </div>
+        <div class="welcome-container">
+            <h2>Welcome back!</h2>
+            <p>Welcome back! We are so happy to have you here. It's great to see you again. We hope you had a safe and enjoyable time away.</p>
+        </div>
+</div> <div class="footer">
+    &copy; 2024 Blood Donation Website | All rights reserved.
+</div>
+</body>
+</html>
